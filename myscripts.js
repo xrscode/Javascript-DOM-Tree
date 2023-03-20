@@ -47,6 +47,8 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+console.log("fly");
+console.log("fly");
 
 // document.querySelector(".score").textContent = score;
 // document.querySelector(".highscore").textContent = highScore;
