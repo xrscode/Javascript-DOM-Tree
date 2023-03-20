@@ -6,7 +6,7 @@ let score = 20;
 let highScore = 0;
 
 //The Secret Number
-const secretNumber = Math.round(Math.random() * 20);
+let secretNumber = Math.round(Math.random() * 20);
 console.log(`The secret number is; ${secretNumber}.`);
 //document.querySelector(".number").textContent = secretNumber;
 
@@ -14,6 +14,8 @@ console.log(`The secret number is; ${secretNumber}.`);
 document.querySelector(".again").addEventListener("click", function () {
   //RESET SCORE TO 20.
   score = 20;
+  secretNumber = Math.round(Math.random() * 20);
+  console.log(`New Secret Number ${secretNumber}.`);
   document.querySelector(".score").textContent = score;
   //Reset Number Variables
   document.querySelector(".number").textContent = "?";
